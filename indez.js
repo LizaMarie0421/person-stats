@@ -6,9 +6,12 @@ function updateHeading(ev){
     const age = f.age.value
     const color = f.color.value
    const div= document.querySelector('#stats p')
-   div.innerHTML= "My Name is "+ name+ " and I live in " + home +
-   ". I am"+age+ " years old and my favorite color is "+ color
- 
+//   div.innerHTML= "My Name is "+ name+ " and I live in " + home +
+//  ". I am"+age+ " years old and my favorite color is "+ color
+  div.innerHTML= `
+  <p>My Name is ${name} and I live in ${home}. I am ${age} years old and my favorite color is${color}</p>
+  `
+  //screen interpulation
 if (home|| name === "blue"){
     document.querySelector('#stats').style.color="blue"
 }
