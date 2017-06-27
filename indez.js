@@ -1,34 +1,34 @@
 function updateHeading(ev){
-     ev.preventDefault()
-     const f =ev.target
-     const name = f.personName.value
-   const heading= document.querySelector('h1')
-   heading.innerHTML= "Person Stats"
-
-   const home = f.HomeTown.value
-   const div= document.querySelector('#div')
-   div.innerHTML= "My Name is "+ name+ " and I live in " + home
+    ev.preventDefault()
+    const f =ev.target
+    const name = f.personName.value
+    const home = f.HomeTown.value
+    const age = f.age.value
+    const color = f.color.value
+   const div= document.querySelector('#stats p')
+   div.innerHTML= "My Name is "+ name+ " and I live in " + home +
+   ". I am"+age+ " years old and my favorite color is "+ color
  
 if (home|| name === "blue"){
-    document.querySelector('#div').style.color="blue"
+    document.querySelector('#stats').style.color="blue"
 }
 else if (home|| name === "red"){
-    document.querySelector('#div').style.color="red"
+    document.querySelector('#stats').style.color="red"
 }
 else if (home|| name === "green"){
-    document.querySelector('#div').style.color="green"
+    document.querySelector('#stats').style.color="green"
 }
 else if (home|| name === "yellow"){
-    document.querySelector('#div').style.color="yellow"
+    document.querySelector('#stats').style.color="yellow"
 }
 else if (home|| name === "orange"){
-    document.querySelector('#div').style.color="orange"
+    document.querySelector('#stats').style.color="orange"
 }
 else if (home|| name === "pink"){
-    document.querySelector('#div').style.color="pink"
+    document.querySelector('#stats').style.color="pink"
 }
 else{
-    document.querySelector('#div').style.color="black"
+    document.querySelector('#stats').style.color="black"
 }
 }
  const personForm = document.querySelector('#person-form')
