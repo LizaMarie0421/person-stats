@@ -36,5 +36,9 @@ function renderListItem(name, age, color){
    list.appendChild(colorItem)
    return list  
 }
+function renderList(name, age, color){
+  renderListItem()
+
+}
  const personForm = document.querySelector('#person-form')
  personForm.addEventListener('submit', handleSubmit)
