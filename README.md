@@ -5,6 +5,7 @@ update new _details_ div with the value of text input.
 #bonus
 * Add *change appearance of 'p' in css based on the value from the form. (ex turn text blue if user type blue in field.)
 
+/////////////////////////////////////////////////
 ##day 2 
 *create new funtion called renderColor that return a div element
 * call  that function when adding that div to the colorItem
@@ -19,3 +20,4 @@ update new _details_ div with the value of text input.
 ##bonusx3
 *try not to use innerHTML. keep using doc.createelement
 
+////////////////////////////////////////////////
