@@ -6,27 +6,12 @@ function handleSubmit(ev){
     const age = f.age.value
     const color = f.color.value
 
- //   const list= document.createElement('ul')
-
- /*   const nameItem= document.createElement('li')
-    nameItem.textContent =`Name: ${name}`
-    list.appendChild(nameItem)
-
-    const ageItem=document.createElement('li')
-    ageItem.textContent=`Age: ${age}`
-    list.appendChild(ageItem)
-
-   const colorItem=document.createElement('li')
-   colorItem.textContent=`Color:`
-   list.appendChild(colorItem)
-  */  
+    const list= document.createElement('ul')
     const stats=document.querySelector('#stats')
-   
+    
+    stats.appendChild(list)
     stats.appendChild(renderListItem(name, age, color))
-     stats.appendChild(list)
-    stats.appendChild(renderColor(color))
-
-  
+   stats.appendChild(renderColor(color))
 }
 function renderColor(color){
     const colorDiv = document.createElement('div')
@@ -49,7 +34,7 @@ function renderListItem(name, age, color){
    const colorItem=document.createElement('li')
    colorItem.textContent=`Color:`
    list.appendChild(colorItem)
-    
+   return list  
 }
  const personForm = document.querySelector('#person-form')
  personForm.addEventListener('submit', handleSubmit)
